@@ -239,9 +239,9 @@ types:
                             },
                             "items": [
                                 "uaa",
-                                {"key":"uaa.create.success", "disable":true, "title": "Created"},
-                                {"key":"uaa.delete.success", "disable":true, "title": "Deleted"},
-                                {"key":"uaa.manage.success", "disable":true, "title": "Managed"},
+                                {"key":"uaa.create.success", "readonly":true, "title": "Created"},
+                                {"key":"uaa.delete.success", "readonly":true, "title": "Deleted"},
+                                {"key":"uaa.manage.success", "readonly":true, "title": "Managed"},
                                 {"key":"uaa.create.errorMessage", "readonly":true, "title": "Create Error", "type":"textarea"},
                                 {"key":"uaa.delete.errorMessage", "readonly":true, "title": "Delete Error", "type":"textarea"},
                                 {"key":"uaa.manage.errorMessage", "readonly":true, "title": "Manage Error", "type":"textarea"}
