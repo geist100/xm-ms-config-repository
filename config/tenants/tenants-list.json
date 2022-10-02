@@ -26,5 +26,9 @@
   "scheduler" : [ {
     "name" : "xm",
     "state" : "ACTIVE"
+  } ],
+  "activition" : [ {
+    "name" : "xm",
+    "state" : "ACTIVE"
   } ]
 }
