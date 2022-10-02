@@ -1,4 +1,104 @@
 ---
+activation:
+- key: "ACTIVATION.ACTION.SERVICE"
+  description: {}
+  resources:
+  - "service"
+  customDescription: "Privilege to create service"
+- key: "ACTIVATION.TENANT.CREATE"
+  description: {}
+  resources:
+  - "tenant"
+  customDescription: "Privilege to add a new tenant on activation micro-service"
+- key: "ACTIVATION.TENANT.DELETE"
+  description: {}
+  resources:
+  - "tenantKey"
+  customDescription: "Privilege to delete tenant on activation micro-service"
+- key: "ACTIVATION.TENANT.GET_LIST"
+  description: {}
+  resources: []
+  customDescription: "Privilege to get all tenants on activation micro-service"
+- key: "ACTIVATION.TENANT.GET_LIST.ITEM"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get tenant by id on activation micro-service"
+- key: "ACTIVATION.TENANT.UPDATE"
+  description: {}
+  resources:
+  - "state"
+  - "tenant"
+  customDescription: "Privilege to update tenant on activation micro-service"
+- key: "ACTIVATION.TRANSACTION.CANCEL"
+  description: {}
+  resources:
+  - "id"
+  customDescription: "Privilege to cancel saga transaction"
+- key: "ACTIVATION.TRANSACTION.CONTINUE"
+  description: {}
+  resources:
+  - "id"
+  customDescription: "Privilege to continue suspended task"
+- key: "ACTIVATION.TRANSACTION.CREATE"
+  description: {}
+  resources:
+  - "sagaTransaction"
+  customDescription: "Privilege to create a new saga transaction"
+- key: "ACTIVATION.TRANSACTION.EVENTS.FIND_ONE"
+  description: {}
+  resources:
+  - "eventId"
+  customDescription: "Privilege to get saga event by id"
+- key: "ACTIVATION.TRANSACTION.EVENTS.UPDATE_CONTEXT"
+  description: {}
+  resources:
+  - "eventId"
+  customDescription: "Privilege to update saga event context"
+- key: "ACTIVATION.TRANSACTION.FIND_ALL"
+  description: {}
+  resources:
+  - "eventId"
+  - "id"
+  customDescription: "Privilege to get all the transactions"
+- key: "ACTIVATION.TRANSACTION.FIND_NEW"
+  description: {}
+  resources:
+  - "eventId"
+  - "id"
+  customDescription: "Privilege to get all the new transactions"
+- key: "ACTIVATION.TRANSACTION.FIND_ONE"
+  description: {}
+  resources:
+  - "id"
+  customDescription: null
+- key: "ACTIVATION.TRANSACTION.GET_BY_KEY"
+  description: {}
+  resources:
+  - "key"
+  customDescription: "Privilege to get transaction by key"
+- key: "ACTIVATION.TRANSACTION.GET_EVENTS"
+  description: {}
+  resources:
+  - "eventId"
+  - "id"
+  customDescription: "Privilege to get all events by transaction"
+- key: "ACTIVATION.TRANSACTION.GET_LOGS"
+  description: {}
+  resources:
+  - "eventId"
+  - "id"
+  customDescription: "Privilege to get saga log records"
+- key: "ACTIVATION.TRANSACTION.IN_QUEUE_RESEND"
+  description: {}
+  resources: []
+  customDescription: "Privilege to resend all events in state IN_QUEUE"
+- key: "ACTIVATION.TRANSACTION.RETRY"
+  description: {}
+  resources:
+  - "eventId"
+  - "id"
+  customDescription: "Privilege to retry saga transaction"
 balance:
 - key: "BALANCE.CREATE"
   description: {}
