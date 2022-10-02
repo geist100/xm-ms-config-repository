@@ -1228,6 +1228,13 @@ gate:
   - "returnObject"
   - "log"
   customDescription: "Privilege to get the active routes"
+offering:
+- key: "OFFERING.CATEGORY.LIST"
+  description: {}
+  resources:
+  - "profile"
+  - "channelId"
+  customDescription: "Privilege to list a product offering category"
 timeline:
 - key: "TIMELINE.GET_LIST"
   description: {}
