@@ -8,6 +8,9 @@
     "state" : "ACTIVE"
   } ],
   "uaa" : [ {
+    "name" : "tt",
+    "state" : "ACTIVE"
+  }, {
     "name" : "xm",
     "state" : "ACTIVE"
   } ],
